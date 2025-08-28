@@ -7,7 +7,7 @@ Description : Place du marché
 
 using System;
 using System.IO;
-
+using System.Text.RegularExpressions;
 
 namespace placeDuMarche
 {
@@ -17,7 +17,20 @@ namespace placeDuMarche
         {
             CsvReader csvReader = new CsvReader(@"pdm.csv");
 
-            
+            int countSeller = 0;
+            foreach (var item in csvReader.DataFromFile())
+            {
+                if (Regex.IsMatch(item.Produit, "^P.ch"))
+                {
+                    ++countSeller;
+                }
+
+            }
+            Console.WriteLine($"il y a {countSeller} vendeur de peches");
+
+
+
+
         }
     }
 }

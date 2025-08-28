@@ -6,10 +6,8 @@ Description : Place du marché
 */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+
 
 namespace placeDuMarche
 {
@@ -17,6 +15,9 @@ namespace placeDuMarche
     {
         static void Main()
         {
+            CsvReader csvReader = new CsvReader(@"pdm.csv");
+
+            
         }
     }
 }

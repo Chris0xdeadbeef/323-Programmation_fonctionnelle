@@ -42,5 +42,13 @@ namespace ExercicesWords
 
             Console.WriteLine(string.Join(", ", words.Where(filtered)));
         }
+
+        public static void exercice4() 
+        {
+            string[] words = { "i am the winner", "hello", "monde", "vert", "rouge", "bleu", "i am the looser" };
+                    
+            Console.WriteLine($"{words.First()} : {words.Last()}");
+            Console.WriteLine($"{words.Last()} : {words.First()}");
+        }
     }
 }

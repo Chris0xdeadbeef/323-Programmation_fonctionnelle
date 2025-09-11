@@ -12,13 +12,12 @@ new Movie() { Title = "Oldboy", Genre = "Thriller", Rating = 8.4, Year = 2003, L
 
 class Movie
 {
-
-    public string Title { get; set; }
-    public string Genre { get; set; }
+    public string? Title { get; set; }
+    public string? Genre { get; set; }
     public double Rating { get; set; }
     public UInt16 Year { get; set; }
-    public string[] LanguageOptions { get; set; }
-    public string[] StreamingPlatforms { get; set; }
+    public string[]? LanguageOptions { get; set; }
+    public string[]? StreamingPlatforms { get; set; }
 
 }
 
